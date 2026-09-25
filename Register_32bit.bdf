@@ -135,7 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect 272 184 440 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -165,9 +165,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 528 688 718 704)
+	(rect 528 688 706 704)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "OUTPUTB14[31..0]" (rect 90 0 184 12)(font "Arial" ))
+	(text "OUTPUTB[31..0]" (rect 90 0 172 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))

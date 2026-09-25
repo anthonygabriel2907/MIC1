@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 296 208)
+	(rect 16 16 280 208)
 	(text "Register_32bit" (rect 5 0 86 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
@@ -80,20 +80,20 @@ applicable agreement for further details.
 		(line (pt 0 144)(pt 16 144))
 	)
 	(port
-		(pt 280 32)
+		(pt 264 32)
 		(output)
 		(text "OUTPUTA[31..0]" (rect 0 0 92 14)(font "Arial" (font_size 8)))
-		(text "OUTPUTA[31..0]" (rect 167 27 259 41)(font "Arial" (font_size 8)))
-		(line (pt 280 32)(pt 264 32)(line_width 3))
+		(text "OUTPUTA[31..0]" (rect 151 27 243 41)(font "Arial" (font_size 8)))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(port
-		(pt 280 48)
+		(pt 264 48)
 		(output)
-		(text "OUTPUTB14[31..0]" (rect 0 0 105 14)(font "Arial" (font_size 8)))
-		(text "OUTPUTB14[31..0]" (rect 154 43 259 57)(font "Arial" (font_size 8)))
-		(line (pt 280 48)(pt 264 48)(line_width 3))
+		(text "OUTPUTB[31..0]" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "OUTPUTB[31..0]" (rect 153 43 243 57)(font "Arial" (font_size 8)))
+		(line (pt 264 48)(pt 248 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 264 176))
+		(rectangle (rect 16 16 248 176))
 	)
 )

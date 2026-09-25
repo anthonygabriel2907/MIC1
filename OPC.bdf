@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 80 216 96)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MIR[35..0]" (rect 5 0 57 12)(font "Arial" ))
+	(text "MIR[35..0]" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 176 256 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "IN_C[31..0]" (rect 5 0 63 12)(font "Arial" ))
+	(text "IN_C[31..0]" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -207,7 +207,22 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 536 216 816 408)
+	(rect 568 464 600 480)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "9" (rect 3 5 8 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 552 216 816 408)
 	(text "Register_32bit" (rect 5 0 86 14)(font "Arial" (font_size 8)))
 	(text "inst7" (rect 8 176 31 188)(font "Arial" ))
 	(port
@@ -267,36 +282,21 @@ applicable agreement for further details.
 		(line (pt 0 144)(pt 16 144))
 	)
 	(port
-		(pt 280 32)
+		(pt 264 32)
 		(output)
 		(text "OUTPUTA[31..0]" (rect 0 0 92 14)(font "Arial" (font_size 8)))
-		(text "OUTPUTA[31..0]" (rect 167 27 259 41)(font "Arial" (font_size 8)))
-		(line (pt 280 32)(pt 264 32)(line_width 3))
+		(text "OUTPUTA[31..0]" (rect 151 27 243 41)(font "Arial" (font_size 8)))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(port
-		(pt 280 48)
+		(pt 264 48)
 		(output)
-		(text "OUTPUTB12[31..0]" (rect 0 0 105 14)(font "Arial" (font_size 8)))
-		(text "OUTPUTB12[31..0]" (rect 154 43 259 57)(font "Arial" (font_size 8)))
-		(line (pt 280 48)(pt 264 48)(line_width 3))
+		(text "OUTPUTB[31..0]" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "OUTPUTB[31..0]" (rect 153 43 243 57)(font "Arial" (font_size 8)))
+		(line (pt 264 48)(pt 248 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 264 176))
-	)
-)
-(symbol
-	(rect 568 464 600 480)
-	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
-	(text "9" (rect 3 5 8 17)(font "Arial" )(invisible))
-	(port
-		(pt 16 16)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(line (pt 16 16)(pt 16 8))
-	)
-	(drawing
-		(line (pt 8 8)(pt 24 8))
+		(rectangle (rect 16 16 248 176))
 	)
 )
 (connector
@@ -305,26 +305,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 512 184)
-	(pt 512 312)
-	(bus)
-)
-(connector
-	(pt 512 312)
-	(pt 536 312)
-	(bus)
-)
-(connector
 	(pt 368 304)
 	(pt 496 304)
-)
-(connector
-	(pt 496 344)
-	(pt 496 304)
-)
-(connector
-	(pt 496 344)
-	(pt 536 344)
 )
 (connector
 	(pt 192 464)
@@ -343,45 +325,13 @@ applicable agreement for further details.
 	(pt 488 424)
 )
 (connector
-	(pt 488 424)
-	(pt 488 264)
-)
-(connector
-	(pt 488 264)
-	(pt 536 264)
-)
-(connector
 	(pt 816 248)
 	(pt 1032 248)
 	(bus)
 )
 (connector
-	(pt 440 360)
-	(pt 440 280)
-)
-(connector
-	(pt 440 280)
-	(pt 536 280)
-)
-(connector
-	(pt 536 360)
-	(pt 528 360)
-)
-(connector
-	(pt 528 504)
-	(pt 528 360)
-)
-(connector
 	(pt 584 480)
 	(pt 584 504)
-)
-(connector
-	(pt 536 296)
-	(pt 480 296)
-)
-(connector
-	(pt 480 296)
-	(pt 480 592)
 )
 (connector
 	(pt 480 592)
@@ -432,5 +382,55 @@ applicable agreement for further details.
 	(text "MIR[14]" (rect 288 400 326 412)(font "Arial" ))
 	(pt 336 416)
 	(pt 288 416)
+)
+(connector
+	(pt 512 184)
+	(pt 512 312)
+	(bus)
+)
+(connector
+	(pt 496 304)
+	(pt 496 344)
+)
+(connector
+	(pt 488 424)
+	(pt 488 264)
+)
+(connector
+	(pt 440 360)
+	(pt 440 280)
+)
+(connector
+	(pt 528 504)
+	(pt 528 360)
+)
+(connector
+	(pt 480 592)
+	(pt 480 296)
+)
+(connector
+	(pt 488 264)
+	(pt 552 264)
+)
+(connector
+	(pt 440 280)
+	(pt 552 280)
+)
+(connector
+	(pt 480 296)
+	(pt 552 296)
+)
+(connector
+	(pt 512 312)
+	(pt 552 312)
+	(bus)
+)
+(connector
+	(pt 496 344)
+	(pt 552 344)
+)
+(connector
+	(pt 528 360)
+	(pt 552 360)
 )
 (junction (pt 552 504))
