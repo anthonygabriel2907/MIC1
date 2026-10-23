@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY BANK_REGS
+set_global_assignment -name TOP_LEVEL_ENTITY MPC_GENERATOR
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:24:07  MAY 26, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -49,6 +49,15 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
+set_global_assignment -name ENABLE_DEVICE_WIDE_RESET ON
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name VECTOR_WAVEFORM_FILE DATAPATH.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DATAPATH4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS_MAR_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS_MBR_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS_MDR_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS_PC_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE CPP.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE H.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE LV.vwf
@@ -110,8 +119,15 @@ set_global_assignment -name BDF_FILE CPP.bdf
 set_global_assignment -name BDF_FILE TOS.bdf
 set_global_assignment -name BDF_FILE MBR.bdf
 set_global_assignment -name BDF_FILE BANK_REGS.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE UMBR.vwf
+set_global_assignment -name BDF_FILE DATA_PATH.bdf
+set_global_assignment -name MIF_FILE MIFtest.mif
+set_global_assignment -name QIP_FILE MemTest.qip
+set_global_assignment -name QIP_FILE RamTest.qip
+set_global_assignment -name BDF_FILE MPC_GENERATOR.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Aluno/Downloads/MIC1-main/MIC1-main/BANK_REGS_MDR_test.vwf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE mpc_generator.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Aluno/HBA/MIC1-AOC/mpc_generator.vwf"
