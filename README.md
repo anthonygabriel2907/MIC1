@@ -39,9 +39,9 @@ Cada projeto está organizado em sua própria pasta, contendo os arquivos necess
 
 ## 👥 Integrantes
 
-- Pedro Francisco
-- Pedro Henrique Sousa
-- Felipe Cortes
+- Anthony Gabriel Sotto Mayor Silva
+- Henrique Parreira Cavalcante de Souza
+- Bernardo Henrique Lebron Machado
 
 ---
 
