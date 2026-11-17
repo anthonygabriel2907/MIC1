@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 264 416 432 432)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MIR[35..0]" (rect 5 0 57 12)(font "Arial" ))
+	(text "MIR[35..0]" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 320 80 488 96)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "IN_C[31..0]" (rect 5 0 63 12)(font "Arial" ))
+	(text "IN_C[31..0]" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -299,6 +299,47 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 256 488 304 520)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 21 20 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 25)(pt 32 16))
+	)
+)
+(symbol
+	(rect 176 624 208 656)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst5" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 488 88)
 	(pt 744 88)
@@ -440,5 +481,30 @@ applicable agreement for further details.
 	(text "MIR[10]" (rect 520 304 558 316)(font "Arial" ))
 	(pt 568 320)
 	(pt 520 320)
+)
+(connector
+	(pt 768 152)
+	(pt 640 152)
+	(bus)
+)
+(connector
+	(text "IN_LOAD[31..0]" (rect 624 507 636 586)(font "Arial" )(vertical))
+	(pt 640 152)
+	(pt 640 584)
+	(bus)
+)
+(connector
+	(pt 256 504)
+	(pt 192 504)
+)
+(connector
+	(pt 192 504)
+	(pt 192 624)
+)
+(connector
+	(text "IN_LOAD[31..0]" (rect 314 488 393 500)(font "Arial" ))
+	(pt 304 504)
+	(pt 432 504)
+	(bus)
 )
 (junction (pt 784 408))
